@@ -1,12 +1,4 @@
-﻿.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    background-color: black;
-    flex-wrap: wrap;
-}
-
+﻿
 /* Navigation Menu Styling */
 .menu {
     list-style: none;
@@ -38,7 +30,7 @@
 
         /* Active link styling */
         .menu li a.active {
-            background-color: darkred; /* Change to any color you prefer */
+            background-color: darkred; 
         }
 
         /* Hover and active states */
