@@ -1,0 +1,181 @@
+﻿.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+/* Navigation Menu Styling */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+    .menu li {
+        margin: 0;
+        padding: 0;
+        flex-grow: 0; /* Prevents items from growing */
+    }
+
+        .menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-right: 2px solid white;
+            transition: background-color 0.3s;
+        }
+
+        .menu li:last-child a {
+            border-right: none;
+        }
+
+        /* Active link styling */
+        .menu li a.active {
+            background-color: darkred; /* Change to any color you prefer */
+        }
+
+        /* Hover and active states */
+        .menu li a:hover {
+            background-color: grey;
+        }
+
+        .menu li a:active {
+            background-color: darkred;
+        }
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0e0b7;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid green;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+    nav ul li {
+        display: inline;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+            nav ul li a.active {
+                background-color: green;
+                border-radius: 5px;
+            }
+
+/* SECTION FIX: Headings Stay at the Top */
+section {
+    border: 2px solid green;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures images don’t overflow */
+}
+
+/* Heading Centered at the Top */
+h2 {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* IMAGE SIZING & POSITIONING */
+.bio img, .hobbies img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    float: left;
+    margin: 0 15px 10px 0; /* Default: Image on Left */
+}
+
+/* Flip Image on Hover */
+.flip-image:hover {
+    transform: scaleX(-1); /* Mirrors the image */
+}
+
+/* Move Hobbies Image to the Right */
+.hobbies img {
+    float: right;
+    margin: 0 0 10px 15px; /* Adjust margin for right alignment */
+}
+
+/* Fix Text Wrapping Issues */
+.bio p, .hobbies p {
+    text-align: justify;
+    overflow: hidden; /* Ensures text flows correctly */
+}
+
+/* CLEAR FLOATS TO PREVENT OVERLAP */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* MODULES TABLE */
+.modules {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgreen;
+}
+
+/* REMOVE EXTRA GREEN SPACE AT BOTTOM */
+footer {
+    clear: both; /* Prevents green space from float issues */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+
